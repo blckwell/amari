@@ -6,7 +6,8 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    background-color: rgba(145, 122, 78, 0.24);
+    background: rgb(249, 208, 21);
+    background: linear-gradient(90deg, rgba(249, 208, 21, 1) 0%, rgba(250, 190, 7, 0.5718662464985995) 0%, rgba(161, 141, 11, 0.927608543417367) 100%);
 }
 
 .img-header {
@@ -35,7 +36,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 100px;
-    
+
 }
 
 .header__links {
@@ -126,10 +127,15 @@
     width: 100px;
 }
 
+
 .img__prato-principal {
     z-index: 0;
     width: 378px;
     height: 356px;
+
+    border-radius: 50%;    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .section__right-arrow {
@@ -140,30 +146,50 @@
     position: absolute;
     top: 400px;
     right: 800px;
+
+    border-radius: 50%;    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .section__right-subprato2 {
     position: absolute;
     top: 270px;
     right: 650px;
+
+    border-radius: 50%;    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .section__right-subprato3 {
     position: absolute;
     top: 200px;
     right: 430px;
+
+    border-radius: 50%;    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .section__right-subprato4 {
     position: absolute;
     top: 270px;
     right: 230px;
+
+    border-radius: 50%;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .section__right-subprato5 {
     position: absolute;
     top: 420px;
     right: 80px;
+
+    border-radius: 50%;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .cardapio__inner {
@@ -179,10 +205,15 @@
 }
 
 .section__title-cardapio {
+    color: #FFF;
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    font-weight: 200;
+
+    background-color: chocolate;
+    border-radius: 50px;
 }
 
 .cardapio__img {
@@ -190,6 +221,21 @@
     border-radius: 30px;
     border: 2px solid #000;
     margin-bottom: 20px;
+
+    /*lupa*/
+    -webkit-transform: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.cardapio__img:hover {
+    -webkit-transition: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    transform: scale(1.7);
 }
 
 .footer__inner {
@@ -200,18 +246,28 @@
 .footer__redes {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 20px;
     background-color: chocolate;
     border-radius: 10px;
 
 }
 
+.footer__contatos {
+    font-family: 'Poppins';
+}
+
 .footer__links {
     height: 50px;
     text-decoration: none;
-    font-family: 'Poppins';
-    color: #FFF;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
+}
+
+.footer__img-wpp {
+    padding-top: 10px;
+    width: 35px;
+}
+
+.footer__img-instagram {
+    padding-top: 5px;
+    width: 45px;
 }

@@ -48,11 +48,16 @@
                     </a>
                 </div>
                 <div class="section__right-subpratos">
-                    <img class="section__right-subprato1" src="/assets/image 2.png" alt=" prato 2">
-                    <img class="section__right-subprato2" src="/assets/image 3.png" alt=" prato 3">
-                    <img class="section__right-subprato3" src="/assets/image 6.png" alt=" prato 6">
-                    <img class="section__right-subprato4" src="/assets/image 7.png" alt="prato 7">
-                    <img class="section__right-subprato5" src="/assets/image 1.png" alt=" prato 1">
+                    <img class="section__right-subprato1" src="/assets/image 2.png"
+                        onclick="mudarPratoPrincipal(this.src)" alt=" prato 2">
+                    <img class="section__right-subprato2" src="/assets/image 3.png"
+                        onclick="mudarPratoPrincipal(this.src)" alt=" prato 3">
+                    <img class="section__right-subprato3" src="/assets/image 6.png"
+                        onclick="mudarPratoPrincipal(this.src)" alt=" prato 6">
+                    <img class="section__right-subprato4" src="/assets/image 7.png"
+                        onclick="mudarPratoPrincipal(this.src)" alt="prato 7">
+                    <img class="section__right-subprato5" src="/assets/image 1.png"
+                        onclick="mudarPratoPrincipal(this.src)" alt=" prato 1">
                 </div>
             </div>
         </div>
@@ -73,8 +78,13 @@
     <footer class="wrapper inner">
         <div class="footer__inner">
             <div class="footer__redes">
-                <a class="footer__links" href="">Instagram</a>
-                <a class="footer__links" href="">WhatsApp</a>
+                <h2 class="footer__contatos">Contatos</h2>
+                <a class="footer__links" href="https://www.instagram.com/amari.cuisine/">
+                    <img class="footer__img-instagram" src="/assets/instagram.png" alt="logo instagram">
+                </a>
+                <a class="footer__links" href="">
+                    <img class="footer__img-wpp" src="/assets/whatsapp.png" alt="logo whatsapp">
+                </a>
             </div>
         </div>
 
@@ -150,6 +160,13 @@
                 }
             });
         });
+
+        /* clica no subprato e ele passa a ser o principal */
+
+        function mudarPratoPrincipal(src) {
+            const pratoPrincipal = document.querySelector('.img__prato-principal');
+            pratoPrincipal.src = src;
+        }
 
     </script>
 </body>
