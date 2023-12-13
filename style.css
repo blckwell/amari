@@ -6,8 +6,7 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    background: rgb(249, 208, 21);
-    background: linear-gradient(90deg, rgba(249, 208, 21, 1) 0%, rgba(250, 190, 7, 0.5718662464985995) 0%, rgba(161, 141, 11, 0.927608543417367) 100%);
+    background: #FAE6B1;
 }
 
 .img-header {
@@ -24,18 +23,18 @@
     width: 100%;
     max-width: 1273px;
     margin: 27px 0 278px 0;
-    background-color: transparent;
+
 }
 
 .header__content {
     margin-top: 55px;
     border-radius: 50px;
     height: 55px;
-    background-color: chocolate;
+    background-color: #254718;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 100px;
+    gap: 200px;
 
 }
 
@@ -71,7 +70,7 @@
     font-family: 'Poppins';
     font-size: 48px;
     font-weight: 500;
-    color: chocolate;
+    color: #7A2200;
 }
 
 .section__title-personalized {
@@ -102,7 +101,7 @@
     width: 162px;
     height: 54px;
     border-radius: 48px;
-    background-color: chocolate;
+    background-color: #254718;
 }
 
 .section__rightbloc {
@@ -192,6 +191,24 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 
+.section__right-subprato1:hover,
+.section__right-subprato2:hover,
+.section__right-subprato3:hover,
+.section__right-subprato4:hover,
+.section__right-subprato5:hover {
+    -webkit-transition: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    transform: scale(1.7);
+
+    -webkit-transform: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
 .cardapio__inner {
     width: 100%;
     max-width: 1273px;
@@ -207,12 +224,12 @@
 .section__title-cardapio {
     color: #FFF;
     font-family: 'Poppins';
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 70px;
-    font-weight: 200;
+    font-weight: 100;
 
-    background-color: chocolate;
+    background-color: #254718;
     border-radius: 50px;
 }
 
@@ -246,10 +263,10 @@
 .footer__contatos {
     color: #FFF;
     font-family: 'Poppins';
-    font-weight: 200;
-    font-size: 35px;
+    font-weight: 100;
+    font-size: 30px;
     text-align: center;
-    background-color: chocolate;
+    background-color: #254718;
     border-radius: 50px;
     margin-bottom: 30px;
 }
@@ -258,7 +275,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+
 }
 
 
